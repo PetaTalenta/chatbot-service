@@ -30,6 +30,14 @@ const initializeServices = async () => {
     startMetricsLogging();
 
     logger.info('All services initialized successfully');
+
+    // Display model information on startup
+    console.log('🤖 Chatbot Service Models:');
+    console.log(`   Default Model: ${process.env.DEFAULT_MODEL || 'x-ai/grok-4-fast:free'}`);
+    console.log(`   Fallback Model: ${process.env.FALLBACK_MODEL || 'z-ai/glm-4.5-air:free'}`);
+    console.log(`   Emergency Fallback: ${process.env.EMERGENCY_FALLBACK_MODEL || 'deepseek/deepseek-chat-v3.1:free'}`);
+    console.log(`   Additional Fallback: ${process.env.ADDITIONAL_FALLBACK_MODEL || 'deepseek/deepseek-r1-0528:free'}`);
+    console.log(`   Use Free Models Only: ${process.env.USE_FREE_MODELS_ONLY === 'true' ? 'Yes' : 'No'}`);
   } catch (error) {
     logger.error('Service initialization failed', { error: error.message });
     throw error;

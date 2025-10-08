@@ -240,6 +240,7 @@ class MessageController {
         data: {
           user_message: userMessage,
           assistant_message: assistantMessage,
+          model: aiResponse.model,
           usage: aiResponse.usage,
           processing_time: totalTime
         }
