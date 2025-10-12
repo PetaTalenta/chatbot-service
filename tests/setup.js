@@ -3,7 +3,7 @@ require('dotenv').config({ path: '.env.test' });
 
 // Set test environment variables
 process.env.NODE_ENV = 'test';
-process.env.DB_NAME = 'atma_test_db';
+process.env.DB_NAME = 'fg_test_db';
 process.env.JWT_SECRET = 'test_jwt_secret';
 process.env.LOG_LEVEL = 'error'; // Reduce log noise during tests
 

@@ -5,7 +5,7 @@ const logger = require('../utils/logger');
 const config = {
   host: process.env.DB_HOST || 'localhost',
   port: process.env.DB_PORT || 5432,
-  database: process.env.DB_NAME || 'atma_db',
+  database: process.env.DB_NAME || 'fg_db',
   username: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || 'password',
   dialect: process.env.DB_DIALECT || 'postgres',

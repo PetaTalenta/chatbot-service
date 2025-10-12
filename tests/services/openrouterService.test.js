@@ -20,8 +20,8 @@ describe('OpenRouterService', () => {
     process.env.MAX_TOKENS = '1000';
     process.env.TEMPERATURE = '0.7';
     process.env.OPENROUTER_TIMEOUT = '45000';
-    process.env.HTTP_REFERER = 'https://atma.chhrone.web.id';
-    process.env.X_TITLE = 'ATMA - AI Talent Mapping Assessment';
+    process.env.HTTP_REFERER = 'https://futureguide.chhrone.web.id';
+    process.env.X_TITLE = 'FutureGuide - AI Talent Mapping Assessment';
 
     // Mock axios instance
     mockAxiosInstance = {
@@ -49,8 +49,8 @@ describe('OpenRouterService', () => {
         headers: {
           'Authorization': 'Bearer test-api-key',
           'Content-Type': 'application/json',
-          'HTTP-Referer': 'https://atma.chhrone.web.id',
-          'X-Title': 'ATMA - AI Talent Mapping Assessment'
+          'HTTP-Referer': 'https://futureguide.chhrone.web.id',
+          'X-Title': 'FutureGuide - AI Talent Mapping Assessment'
         },
         timeout: 45000
       });
@@ -72,8 +72,8 @@ describe('OpenRouterService', () => {
         headers: {
           'Authorization': 'Bearer test-api-key',
           'Content-Type': 'application/json',
-          'HTTP-Referer': 'https://atma.chhrone.web.id',
-          'X-Title': 'ATMA - AI Talent Mapping Assessment'
+          'HTTP-Referer': 'https://futureguide.chhrone.web.id',
+          'X-Title': 'FutureGuide - AI Talent Mapping Assessment'
         },
         timeout: 45000
       });
